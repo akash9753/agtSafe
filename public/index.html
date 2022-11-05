@@ -1,0 +1,193 @@
+﻿<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+
+    <!--Cache Expiry headers meta tags-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!--Cache Expiry headers meta tags-->
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon.png">
+    <link async rel="stylesheet" href="%PUBLIC_URL%/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/react-instantsearch-theme-algolia@4.0.0/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+          integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+          crossorigin="" async />
+    <link rel="stylesheet" href="%PUBLIC_URL%/pdf/jquery-ui.css">
+    <script src="%PUBLIC_URL%/pdf/jquery_1_12_4.js"></script>
+    <!--<script src="%PUBLIC_URL%/pdf/jquery.js"></script>-->
+    <script src="%PUBLIC_URL%/pdf/jquery-ui.js"></script>
+    <link rel="stylesheet" href="%PUBLIC_URL%/pdf/docuvieware-min.css">
+    <script src="%PUBLIC_URL%/pdf/docuvieware-min.js?v=1.1.2"></script>
+    <script src="%PUBLIC_URL%/pdf/contextmeuns/contextmenu.js"></script>
+    <script src="%PUBLIC_URL%/pdf/contextmeuns/jquery.ui.position.min.js"></script>
+    <link href="%PUBLIC_URL%/pdf/contextmeuns/jquery.contextMenu.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/mozpdf/mozPdfViewer.css">
+
+    <link rel="resource" type="application/l10n" href="%PUBLIC_URL%/mozpdf/scripts/images/locale/locale.properties">
+    <script type="text/javascript" src="%PUBLIC_URL%/scripts/util.js?v=1.1"></script>
+
+
+    <script src="%PUBLIC_URL%/mozpdf/scripts/pdf.js" asp-append-version="true"></script>
+    <script src="%PUBLIC_URL%/mozpdf/scripts/worker/pdf.worker.js" asp-append-version="true"></script>
+    <script src="%PUBLIC_URL%/mozpdf/scripts/viewer.js?v=2" asp-append-version="true"></script>
+
+    <script src="%PUBLIC_URL%/mozpdf/mozPdf.js?ver=2"></script>
+    <script src="%PUBLIC_URL%/pdf/AnnotFuncs.js?v=3" asp-append-version="true"></script>
+    <!--Fontawesome Icon CSS Added-->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/fontawesome.css">
+    <!--<script src="%PUBLIC_URL%/pdf/AnnotFuncs.js"></script>-->
+    <script>
+        function load_js() {
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            script.src = "%PUBLIC_URL%/pdf/AnnotFuncs.js?v=2";
+            head.appendChild(script);
+        }
+        //load_js(); // loaded in ablove script
+    </script>
+
+    <style>
+
+        .staticScroll {
+            overflow: scroll !important;
+            overflow-x: hidden !important;
+        }
+
+        .ui-autocomplete {
+            max-height: 200px;
+            overflow-y: auto;
+            background-color: #ffffff;
+            /* prevent horizontal scrollbar */
+            overflow-x: hidden;
+            /* add padding to account for vertical scrollbar */
+            padding-right: 20px;
+        }
+
+        .hKRXxu {
+            padding: 0px 10px !important;
+        }
+
+        div .sc-bxivhb {
+            border-color: #ddd;
+            border-radius: 5px;
+            border: 1px solid rgb(221, 221, 221);
+            background: #fff;
+        }
+
+        .ant-breadcrumb {
+            margin-bottom: 10px !important;
+            border-color: #ddd;
+            border-radius: 5px;
+            border: 1px solid rgb(221, 221, 221);
+            background: #fff;
+            width: 100%;
+            padding: 5px !important;
+        }
+
+        .ant-form-explain {
+            color: #f5222d !important;
+        }
+
+        .has-success .ant-form-explain {
+            color: green !important;
+        }
+
+        .has-warning .ant-form-explain {
+            color: #faad14 !important;
+        }
+
+        .ant-form-item {
+            padding: 0px !important;
+            margin-bottom: 10px !important;
+        }
+
+        .ant-modal-body {
+            padding: 10px !important;
+        }
+
+            .ant-modal-body .hKRXxu {
+                padding: 0px !important;
+            }
+
+        .ant-modal-header {
+            padding: 15px 10px !important;
+        }
+
+        .ant-modal-footer {
+            padding: 10px !important;
+        }
+        /*th,td{
+            text-align:center !important;
+        }*/
+        .dv-main .dv-leftsidebuttons .leftsidebutton,
+        #viewerContainerDocuVieware1 div {
+            box-sizing: unset;
+        }
+    </style>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>TransBot</title>
+</head>
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+
+
+        function CloseDoc() {
+            if (window.savedTextAnnotID != undefined) {
+                if (sessionStorage.controlID != undefined && sessionStorage.controlID != 0) {
+                    if (sessionStorage.pdfDetails != "null") {
+                        var parseData = JSON.parse(sessionStorage.pdfDetails);
+
+                        let tempData = {};
+                        tempData["controlID"] = sessionStorage.controlID;
+                        tempData["docTempPath"] = parseData.docTempPath;
+                        DocuViewareAPI.PostCustomServerAction(sessionStorage.controlID, true, "CloseDocument", tempData, function (response) {
+                            DocuViewareAPI.UpdateLayout(sessionStorage.controlID);
+                            DocuViewareAPI.CloseDocument(sessionStorage.controlID);
+                            $("#" + controlID).html("");
+                            $("#pdfmainscript").remove();
+
+                            //if we not save the pdf before close doc we have to delete the saved annotation in database
+                            window.textAnnotDelete(window.savedTextAnnotID);
+                        });
+                    }
+                    sessionStorage.controlID = 0;
+
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+﻿#blocklyDiv {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+}
+.blocklyToolboxDiv {
+    min-width:200px;
+}
+.blocklyDropDownDiv {
+    z-index: 999 !important;
+}
+.blocklySvg {
+    height: 100%;
+}

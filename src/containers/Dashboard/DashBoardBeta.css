@@ -1,0 +1,155 @@
+﻿.scrollboxGettingstarted,
+.scrollboxRecent,
+.scrollboxStudylist,
+.scrollboxDashboardChart,
+.scrollboxNotifications {
+    overflow: auto;
+    visibility: hidden;
+}
+/*for chrome with bookmarkbar @height 626px*/  
+@media screen and (min-height:626px) {
+    .scrollboxGettingstarted {
+        max-height: calc(100vh - 70.2vh) !important;
+    }
+
+    .scrollboxRecent {
+        max-height: calc(100vh - 70.2vh) !important;
+    }
+
+    .scrollboxDashboardChart {
+        max-height: calc(100vh - 70.2vh) !important;
+    }
+
+    .scrollboxNotifications {
+        max-height: calc(100vh - 72.7vh) !important;
+    }
+
+    .scrollboxStudylist {
+        height: calc(100vh - 167px);
+    }
+}
+/*for chrome and firefox without bookmarkbar @height 654px*/
+@media screen and (min-height:654px) {
+    .scrollboxGettingstarted {
+        max-height: calc(100vh - 69.5vh) !important;
+    }
+
+    .scrollboxRecent {
+        max-height: calc(100vh - 69vh) !important;
+    }
+
+    .scrollboxDashboardChart {
+        max-height: calc(100vh - 69.5vh) !important;
+    }
+
+    .scrollboxNotifications {
+        max-height: calc(100vh - 161px) !important;
+    }
+
+    .scrollboxStudylist {
+        height: calc(100vh - 167px);
+    }
+}
+
+/*for chrome with bookmarkbar @height 938px*/
+@media screen and (min-height:938px) {
+    .scrollboxGettingstarted {
+        min-height: calc(100vh - 63.5vh) !important;
+    }
+
+    .scrollboxRecent {
+        min-height: calc(100vh - 63.5vh) !important;
+    }
+
+    .scrollboxDashboardChart {
+        min-height: calc(100vh - 63.5vh) !important;
+    }
+
+    .scrollboxNotifications {
+        min-height: calc(100vh - 63.8vh) !important;
+    }
+
+    .scrollboxStudylist {
+        height: calc(100vh - 167px);
+    }
+    .barchart-box {
+        padding-top: 30px!important;
+        padding-bottom: 10px!important;
+    }
+}
+/*for chrome with bookmarkbar @height 966px*/
+@media screen and (min-height:966px) {
+    .scrollboxGettingstarted {
+        min-height: calc(100vh - 63vh) !important;
+    }
+
+    .scrollboxRecent {
+        min-height: calc(100vh - 63.2vh) !important;
+    }
+
+    .scrollboxDashboardChart {
+        min-height: calc(100vh - 63.5vh) !important;
+    }
+
+    .scrollboxNotifications {
+        min-height: calc(100vh - 63vh) !important;
+    }
+
+    .scrollboxStudylist {
+        height: calc(100vh - 167px);
+    }
+
+    .barchart-box {
+        padding-top: 30px !important;
+        padding-bottom: 10px !important;
+    }
+}
+.scrollbox_delayed {
+    transition: visibility 0.1s;
+}
+.scrollbox-content,
+.scrollboxGettingstarted:hover,
+.scrollboxGettingstarted:focus,
+.scrollboxRecent:hover,
+.scrollboxRecent:focus,
+.scrollboxStudylist:hover,
+.scrollboxStudylist:focus,
+.scrollboxNotifications:hover,
+.scrollboxNotifications:focus {
+    visibility: visible;
+}
+    .scrollbox_delayed:hover {
+        transition: visibility 0s 0.1s;
+    }
+
+    /*inner padding css change*/
+    .GettingStarted .ant-card-body,
+    .Recent .ant-card-body,
+    .StudyList .ant-card-body,
+    .DashboardChart .ant-card-body,
+    .Notifications .ant-card-body {
+    padding:21px;
+    }
+
+/*Custom Hover Effect*/
+.boxshadow {
+    transition: box-shadow .3s;
+}
+
+.boxshadow:hover {
+box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.barchart-box {
+    border-radius: unset;
+    border-top: unset;
+    border-left: unset; 
+    border-right: unset;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 5px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+/*Padding removing in Work to be done page*/
+.dashboard-removepadding .isoLayoutContentWrapper {
+    padding: 0px !important;
+}

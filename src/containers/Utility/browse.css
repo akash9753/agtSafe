@@ -1,0 +1,134 @@
+﻿.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group-prepend {
+    margin-right: -1px;
+}
+
+.input-group-append, .input-group-prepend {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.custom-file-input {
+    position: relative;
+    z-index: 2;
+    height: calc(2.25rem + 2px) !important;
+    margin: 0;
+    opacity: 0;
+    margin-left: -109px !important;
+    width: 110px !important;
+}
+
+.custom-file-label {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.input-group > .custom-file:not(:first-child) .custom-file-label {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group > .custom-file {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    margin-bottom: 0;
+}
+
+.input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+[hidden] {
+       display: none !important;
+
+}
+.react-fine-uploader-file-progress-bar,.react-fine-uploader-file-total-progress-bar {
+    border-radius: 3px;
+    }
+.react-fine-uploader-file-progress-bar-container,.react-fine-uploader-file-total-progress-bar-container {
+    background: #F2F2F2;
+    border-radius: 3px;   
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+    }
+.react-fine-uploader-file-total-progress-bar-container {
+    display: inline-block;
+       height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;   width: 70%;
+    }
+
+.react-fine-uploader-file-progress-bar,
+.react-fine-uploader-file-total-progress-bar {
+        background: #00ABC7;
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+        height: inherit;
+        }
+.react-fine-uploader-file-progress-bar-container {
+    height: 15px;
+    opacity: 0.9;
+    /*-webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);*/
+    width: 100%;
+    z-index: 1;
+    margin-top:10px;
+}
+.tablePop .ant-modal{
+    width:65% !important;
+}

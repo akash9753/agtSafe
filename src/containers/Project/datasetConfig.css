@@ -1,0 +1,15 @@
+﻿.domainList {
+    width: 25%;
+}
+
+.ant-list-item {
+    padding: 5px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.ant-list-item :hover {
+    background: linear-gradient(to left, #3A6073, #16222A) !important;
+    color: #fff;
+    
+}

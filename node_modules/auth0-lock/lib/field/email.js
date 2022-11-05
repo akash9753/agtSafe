@@ -1,0 +1,69 @@
+'use strict';
+
+exports.__esModule = true;
+exports.validateEmail = validateEmail;
+exports.isEmail = isEmail;
+exports.setEmail = setEmail;
+exports.emailDomain = emailDomain;
+exports.emailLocalPart = emailLocalPart;
+
+var _trim = require('trim');
+
+var _trim2 = _interopRequireDefault(_trim);
+
+var _isEmail2 = require('validator/lib/isEmail');
+
+var _isEmail3 = _interopRequireDefault(_isEmail2);
+
+var _index = require('./index');
+
+var _enterprise = require('../connection/enterprise');
+
+var _i18n = require('../i18n');
+
+var i18n = _interopRequireWildcard(_i18n);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function validateEmail(str) {
+  var strictValidation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  return isEmail(str, strictValidation);
+}
+
+function isEmail(str) {
+  var strictValidation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  if (typeof str !== 'string') {
+    return false;
+  }
+  var trimmed = (0, _trim2.default)(str);
+  return strictValidation ? (0, _isEmail3.default)(str) : trimmed.indexOf('@') >= 0 && trimmed.indexOf('.') >= 0 && trimmed.indexOf(' ') === -1;
+}
+
+function setEmail(m, str) {
+  var strictValidation = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  return (0, _index.setField)(m, 'email', str, function (str) {
+    var validHRDEMail = (0, _enterprise.isHRDEmailValid)(m, str);
+
+    return {
+      valid: validateEmail(str, strictValidation) && validHRDEMail,
+      hint: !validHRDEMail ? i18n.html(m, ['error', 'login', 'hrd.not_matching_email']) : undefined
+    };
+  });
+}
+
+function emailDomain(str) {
+  if (!isEmail(str)) {
+    return '';
+  }
+  return str.split('@')[1].toLowerCase();
+}
+
+function emailLocalPart(str) {
+  var domain = emailDomain(str);
+  return domain ? str.slice(0, -1 - domain.length) : str;
+}

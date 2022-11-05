@@ -1,0 +1,6 @@
+﻿.ant-tabs-content, .ant-tabs-content-animated {
+    height: calc(100vh - 207px);
+    overflow-y: scroll;
+}
+
+ 

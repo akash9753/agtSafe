@@ -1,0 +1,2498 @@
+﻿/*for table scroll perfect*/
+
+.staticScroll {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+.ant-table-header {
+    overflow: scroll ;
+    overflow-x: hidden !important;
+}
+.ant-table-empty .ant-table-header {
+    overflow: scroll;
+    overflow-x: scroll !important;
+}
+#noContent .ant-table-header,
+#transBotTable .ant-table-header,
+#defineBotTable .ant-table-header,
+#transBotTable .ant-table-thead > tr > th {
+    background-color: #b0bfc6 !important;
+    margin-bottom: 0px !important;
+}
+/* for temp fix*/
+#noContent .ant-table-body, #noContent .ant-table-body, #transBotTable .ant-table-body, #defineBotTable .ant-table-body {
+    overflow-y: auto !important;
+}
+
+#backBtnAdded .ant-table-body,
+#transBotTable .staticScroll,
+#defineBotTable .staticScroll,
+#noContent .staticScroll 
+{
+    overflow-y: scroll !important;
+}
+
+#noContent .ant-table-body,
+#transBotTable .autoScroll,
+#defineBotTable .autoScroll {
+    overflow-y: auto !important;
+}
+
+.ant-table-hide-scrollbar::-webkit-scrollbar {
+    min-width: auto !important;
+}
+/*Scroll now working with JS CODE please don't update for Table scroll*/
+
+/*End*/
+
+/* DefineListsScroll height */
+.Definelistscroll {
+    max-height: calc(100vh - 160px) !important;
+    overflow-y: auto;
+    margin-top: 5px;
+}
+/* Button disabled css for default and hover*/
+button[disabled]:hover {
+    color: #D8D8D8 !important;
+    background-color: #f7f7f7 !important;
+    border-color: #e9e9e9 !important;
+    cursor: not-allowed !important;
+}
+
+button[disabled] {
+    color: #D8D8D8 !important;
+    background-color: #f7f7f7 !important;
+    border-color: #e9e9e9 !important;
+    cursor: not-allowed !important;
+}
+
+/* file uploader disabled css*/
+.disabledFileUploader > input-group > .input-group-prepend,
+.disabledFileUploader > .react-fine-uploader-file-input {
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+/* Project page edit delete config btns css*/
+button.ant-btn.disabledEnabled.sc-ifAKCX.fcfmNQ {
+    background-color: transparent !important;
+}
+
+button.ant-btn.disabledEnabled.sc-ifAKCX.fcfmNQ:hover {
+    background-color: transparent !important;
+}
+
+button.ant-btn.disabledEnabled.sc-ifAKCX.fcfmNQ > i {
+    color: #92a9b5 !important;
+}
+button.ant-btn:not(#metadataConfigBtn) {
+    border-radius: 15px !important;
+}
+
+
+
+.activeInactiveState {
+    margin-right: 10px;
+    float: right;
+    margin-top: 7px;
+}
+
+/*Table row tr even color CSS*/
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/*Table row tr hover color CSS*/
+tr:hover {
+    background-color: rgba(57, 95, 113, 0.4);
+}
+
+
+/*Removed Table row tr td border-bottom CSS*/
+.ant-table-tbody > tr > td {
+    font-size: 12px !important;
+    /*border-bottom:unset!important;*/
+    white-space: nowrap;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ant-table-thead > tr > th {
+    font-weight: 600;
+}
+
+
+/*Removed Table Wrapper borderm CSS*/
+div .sc-bxivhb {
+    border: unset !important;
+}
+
+
+/*Setted body color as white*/
+body {
+    background-color: #fff !important;
+    font-size: 12px !important;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+   
+
+.ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title {
+    font-size: 12px !important;
+}
+
+/*Layout Header color CSS*/
+.ant-layout-header {
+    background: #16222A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3A6073, #16222A); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/*Layout Background color CSS*/
+.ant-layout {
+    background: #fff !important;
+}
+
+/*Header Background color for only logo*/
+.logoLeft {
+    background-color: transparent !important;
+}
+
+
+/*Header fonts color for only logo*/
+.iomHtF .isomorphicTopbar .logoLeft h3 a {
+    color: #fff !important;
+}
+
+
+/*Topbar Logo Font-weight css ends*/
+.iomHtF .isomorphicTopbar .logoLeft h3 a {
+    padding-top: 7px;
+    font-weight: 500 !important;
+}
+
+
+/*Header fonts color for rest of the right sides*/
+.iomHtF .isomorphicTopbar .isoRight h3 {
+    color: #fff !important;
+}
+
+
+/*Topbar Right Side Selected Project and Role Font-weight css*/
+.iomHtF .isomorphicTopbar .isoRight h3 {
+    padding-top: 7px;
+    font-weight: 300 !important;
+}
+
+/* operational layout css*/
+.operationalModal .isoBoxWrapper {
+    padding: 5px !important;
+}
+
+/*Layout color CSS*/
+.isomorphicContent {
+    background-color: #e4e9ec !important;
+}
+
+
+/*Project page Project List and their contents layout CSS Starts*/
+
+.isoContactBoxWrapper {
+    border: unset !important;
+    padding-top: 5px !important;
+}
+
+.isoContactListBar {
+    border-right: unset !important;
+    border-left: unset !important;
+    border-top: unset !important;
+    border-bottom: unset !important;
+    padding: 0 5px !important;
+    box-shadow: 8px 0 10px -9px rgba(0,0,0,0.2) !important;
+    -webkit-box-shadow: 8px 0 10px -9px rgba(0,0,0,0.2) !important;
+    z-index: 1 !important;
+}
+
+.isoContactList .isoSingleContact.active { /* if project list clicked and active css Enabled */
+    background: #16222A !important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3A6073, #16222A) !important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3A6073, #16222A) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.isoContactList .isoSingleContact { /*Removed border bottom for project list*/
+    border-bottom: unset !important;
+    border-radius: 10px !important;
+    margin: 1px 0px !important;
+}
+
+    .isoContactList .isoSingleContact:hover { /* on hover css for project list */
+        background: #16222A !important; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #3A6073, #16222A) !important; /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #3A6073, #16222A) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+.isoSingleContact:hover .isoNoteText { /* on hover project list - project title gets animated from margin-left transition css*/
+    margin-left: 15px !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.isoContactList .isoSingleContact.active .isoNoteText h3,
+.isoContactList .isoSingleContact.active button i { /* onclick active project list - project title color and edit and delete icons color change css*/
+    color: #fff !important;
+}
+
+.isoContactList .isoSingleContact:hover .isoNoteText h3,
+.isoContactList .isoSingleContact:hover button i { /* onHover project list - project title color and edit and delete icons color change css*/
+    color: #fff !important;
+}
+
+/*Project page Project List and their contents layout CSS Ends*/
+
+
+/* Treeview Page Styles Starts Here*/
+
+.ant-tree li .ant-tree-node-content-wrapper:hover,
+.ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    color: #fff !important;
+    background: #375b6d !important;
+}
+
+.isoNoteList .isoList:hover {
+    background: #16222A !important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3A6073, #16222A) !important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3A6073, #16222A) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+    .isoNoteList .isoList:hover h3 {
+        color: #fff !important;
+    }
+
+    .isoNoteList .isoList:hover .pinnedIcon {
+        color: #fff !important;
+    }
+
+.isoNoteList .isoList.active {
+    background: #16222A !important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3A6073, #16222A) !important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3A6073, #16222A) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+    .isoNoteList .isoList.active h3 {
+        color: #fff !important;
+    }
+
+    .isoNoteList .isoList.active .pinnedIcon {
+        color: #fff !important;
+    }
+
+.ant-col-5 > .isoBoxWrapper {
+    border-right: 1px solid #e9e9e9 !important;
+}
+
+.isoBoxWrapper {
+    border-bottom: unset !important;
+    border-top: unset !important;
+    border-left: unset !important;
+    border-right: unset !important;
+}
+
+/* Treeview Page Styles Ends Here*/
+
+
+/*Table SelectDropDownOptionValue background color css*/
+.table-select-value > .ant-select-selection {
+    background-color: #375b6d !important;
+}
+
+
+    /*Table SelectDropDownOptionValue Height css*/
+    .table-select-value > .ant-select-selection.ant-select-selection--single {
+        height: 36px !important;
+        border-radius: 15px !important;
+    }
+
+
+/*Table SelectDropDownOptionValue inner values { examples : 10 , 20, 50 , 100 } color and padding css*/
+.table-select-value .ant-select-selection-selected-value {
+    padding: 2px 12px 0 0 !important;
+    color: #ffffff !important;
+}
+
+
+/*Table SelectDropDownOptionValue inner values { examples : 10 , 20, 50 , 100 } color and padding css*/
+.table-select-value .ant-select-arrow {
+    color: #ffffff !important;
+}
+
+/*Table SelectDropDownOptionValue onHover background and border-color css*/
+.table-select-value > .ant-select-selection:hover {
+    background-color: #ffffff !important;
+    border-color: #375b6d !important;
+}
+
+
+/*Table SelectDropDownOptionValue onHover height css*/
+.table-select-value > .ant-select-selection.ant-select-selection--single:hover {
+    height: 36px !important;
+}
+
+
+/*Table SelectDropDownOptionValue onHover inner values { examples : 10 , 20, 50 , 100 } color css*/
+.table-select-value:hover .ant-select-selection-selected-value {
+    color: #375b6d !important;
+}
+
+
+/*Table SelectDropDownOptionValue onHover arrow color css*/
+.table-select-value:hover .ant-select-arrow {
+    color: #375b6d !important;
+}
+
+
+/*Table SelectDropDownOptionValue onfocus and onactive border and box shadow color css*/
+.table-select-value .ant-select-selection:focus, .table-select-value .ant-select-selection:active {
+    border-color: #375b6d !important;
+    outline: 0;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+}
+
+
+/* Reduced Font-size from 16px to 12px css */
+body, .ant-card, .ant-breadcrumb {
+    font-size: 12px !important;
+}
+
+
+/* layout padding left and right css */
+.hKRXxu {
+    padding: 0px 5px !important;
+}
+
+
+/* Topbar user icon css */
+.isoUser {
+    margin-top: -2px !important;
+}
+
+
+/*Topbar user and roles menu dropdowns background css starts*/
+.ant-menu-item:hover {
+    background: linear-gradient(to left, #3A6073, #16222A) !important;
+    color: #fff !important;
+}
+
+.ant-menu-item > a:hover {
+    color: #fff !important;
+}
+
+/*TreeView nav items margin css*/
+.ant-tabs-nav .ant-tabs-tab {
+    margin: 0px 0px 0px 0px !important;
+    font-weight: 600 !important;
+}
+
+
+.ftENRH {
+    margin: 0px !important;
+    padding: 5px !important;
+}
+
+
+/* Ant Spin Loading CSS for whole application while Routing */
+.ant-spin-nested-loading > div > .ant-spin {
+    /*top: 50%;
+    left: 50%;*/
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Forms Validation messages at top right of form fields*/
+.ant-form-vertical .ant-form-explain, .ant-form-vertical .ant-form-extra {
+    /*margin-top: -50px !important;
+    position: absolute !important;
+    font-size: 12px !important;
+    right: 0 !important;*/
+}
+
+
+/* Reduced height of whole selectedDropDownField */
+/*.ant-select-selection--single {
+    height: 32px !important;
+}*/
+
+/*height of whole input for valuelevel ,codelist form height issue */
+/*.ant-input-sm:not(#ExcelFilePath,#FilePath,#CodeListFilePath) {
+    height: 31px !important;
+}*/
+
+/* form btns ok, save, cancel, clear btns*/
+.outputgen_button,
+.ant-btn-primary:not(.ant-btn-sm):not(.importFromMappingLib_css ),
+.ant-btn-pdfsave:not(.ant-btn-sm),
+.ant-btn-predict:not(.ant-btn-sm),
+.ant-btn-default:not(.ant-btn-sm),
+.ant-btn-danger:not(.ant-btn-sm),
+.saveBtn:not(.ant-btn-sm) {
+    height: 27px !important;
+/*    padding: 0px 15px !important;
+*/    /*: unset !important;*/
+}
+.ant-btn-round.ant-btn-sm{
+    font-size: 12px !important;
+}
+/*
+.ant-btn-icon-only:not(.ant-btn-circle) {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+    */
+/* Reduced line-height of whole selectedDropDownField */
+/*.ant-select-selection__rendered {
+    line-height: 29px !important;
+}*/
+/* Topbar User DropdownList font size CSS*/
+.dmQGfv.isoUserDropdown .isoDropdownLink {
+    font-size: 12px !important;
+}
+
+
+    /* onHover and onFocus Topbar User DropdownList color CSS*/
+    .dmQGfv.isoUserDropdown .isoDropdownLink:hover,
+    .dmQGfv.isoUserDropdown .isoDropdownLink:focus {
+        color: #188ffe !important;
+    }
+
+
+    /* Topbar Userlist Dropdown onhover <i> Zoom scale css*/
+    .dmQGfv.isoUserDropdown .isoDropdownLink i {
+        -webkit-transition: transform 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: transform 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: transform 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: transform 200ms ease-in;
+        transform: scale(1);
+    }
+
+
+    /* Topbar Userlist Dropdown onhover <i> Zoom scale css*/
+    .dmQGfv.isoUserDropdown .isoDropdownLink:hover i {
+        -webkit-transition: transform 200ms ease-in;
+        -webkit-transform: scale(1.2);
+        -ms-transition: transform 200ms ease-in;
+        -ms-transform: scale(1.2);
+        -moz-transition: transform 200ms ease-in;
+        -moz-transform: scale(1.2);
+        transition: transform 200ms ease-in;
+        transform: scale(1.2);
+    }
+
+
+/* Topbar Configuration - User Settings - Project Popovers fontsize and weight*/
+.dmQGfv .ant-menu-inline .ant-menu-item {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 35px !important;
+    height: 35px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+
+    /* Topbar Configuration - User Settings - Project Popovers onhover Zoom icon css*/
+    .dmQGfv .ant-menu-inline .ant-menu-item i {
+        -webkit-transition: transform 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: transform 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: transform 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: transform 200ms ease-in;
+        transform: scale(1);
+    }
+
+
+    /* Topbar Configuration - User Settings - Project Popovers onhover Zoom icon css*/
+    .dmQGfv .ant-menu-inline .ant-menu-item:hover i {
+        -webkit-transition: transform 200ms ease-in;
+        -webkit-transform: scale(1.2);
+        -ms-transition: transform 200ms ease-in;
+        -ms-transform: scale(1.2);
+        -moz-transition: transform 200ms ease-in;
+        -moz-transform: scale(1.2);
+        transition: transform 200ms ease-in;
+        transform: scale(1.2);
+    }
+
+.ant-popover-inner-content {
+    padding: 8px !important
+}
+
+/* Changed Form Field Label Font-weight */
+.ant-form-item label {
+    font-weight: 600 !important;
+    font-size: 13px;
+}
+
+.ant-form-item-required::before {
+    font-weight: 400;
+}
+
+/* Changed input field padding css */
+.ant-input {
+    padding: 4px 11px !important;
+}
+
+/* Uploader input choose file height css*/
+.custom-inputChooseFile {
+    height: 32px !important;
+}
+
+/* Changed input field and select fields css */
+.ant-input:not(textarea), .ant-select {
+    color: #000000 !important;
+    height: 32px !important;
+    font-size: 12px !important;
+}
+
+/* Changed Disabled Input field and Select fields colors and added Cursor not allowed*/
+.ant-input-disabled, .ant-select-disabled .ant-select-selection {
+    background-color: #eeeeee !important;
+    cursor: not-allowed;
+    color: rgba(0,0,0,0.5) !important;
+}
+
+
+/* Breadcrumb Style Starts*/
+
+.ant-breadcrumb {
+    margin-bottom: 5px !important;
+    padding-left: 10px !important;
+    border-left: unset !important;
+    border-right: unset !important;
+    border-bottom: unset !important;
+    border-top: unset !important;
+    border-radius: unset !important;
+}
+
+.ant-breadcrumb-link > i {
+    padding-right: 5px;
+}
+
+.ant-breadcrumb,
+.ant-breadcrumb-link {
+    color: #353535 !important;
+}
+
+/* Breadcrumb Style Starts*/
+
+
+/* MyProfile Page CSS */
+.myprofile-Layout #middleDiv {
+    max-height: calc(100vh - 179px);
+    overflow-y: auto;
+}
+
+
+/* Treeview SlideToggle Button CSS */
+.sideToggleBtn,
+.sideToggleBtn:hover,
+.sideToggleBtn:focus {
+    height: auto !important;
+    padding: 0px !important;
+    border: unset !important;
+    color: #3a6073 !important;
+}
+
+
+/* DashBoard SlideToggle Button CSS */
+.fullViewBtn {
+    height: 30px !important;
+    border: none !important;
+}
+
+
+/* Treeview Layout */
+.treeview-layout {
+    height: calc(100vh - 82px);
+}
+
+
+
+
+
+/* Table Alignment without scrollbar header Css */
+#withHeaderScroll .ant-table-header .ant-table-fixed {
+    padding-right: 0px !important;
+}
+
+/*.ant-table-scroll > .ant-table-header {
+    padding-right: 17px !important;
+}*/
+
+
+/* Table Alignment CSS without scrollbar header if Action Column if fixed */
+/*.ant-table-scroll > .ant-table-header > .ant-table-fixed {
+    padding-right: 17px !important;
+}*/
+
+.ant-table-header {
+    background-color: #b0bfc6 !important;
+}
+
+.ant-table-column-sorter-up, .ant-table-column-sorter-down {
+    color: #28404e;
+}
+
+/* Table if Action Column is fixed border-right CSS is added*/
+.ant-table-fixed-left thead th,
+.ant-table-fixed-left .ant-table-body-outer tbody tr td {
+    border-right: 1px solid #e8e8e8 !important;
+}
+
+
+/* Table head and body tr > th and td font-colors css */
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr:not(.notValidRecord):not(.IMPACTED_ROW ) > td {
+    color: #2d2e2f !important
+}
+
+
+/* Project Page - Project Title @Normal font-colors css */
+.isoNoteText > h3 {
+    color: #353535 !important;
+}
+.isoNoteText {
+    padding: 15px 0 !important;
+}
+
+
+/* Tooltip Styles Starts */
+.ant-tooltip-placement-top .ant-tooltip-arrow,
+.ant-tooltip-placement-topLeft .ant-tooltip-arrow,
+.ant-tooltip-placement-topRight .ant-tooltip-arrow {
+    border-top-color: #16222A !important;
+}
+
+.ant-tooltip-inner {
+    color: #fff !important;
+    border: 1px solid #16222A !important;
+    background: #16222A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.15) !important;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.15) !important;
+}
+/* Tooltip Styles Ends */
+
+
+/*DashBoard Study role title color css*/
+.Studyrole-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1890ff;
+    display: block;
+    margin-top: -26px;
+    margin-left: 170px;
+}
+
+
+/* Treeview Mapping Operational Modal Btns CSS*/
+.OperationModalBtns {
+    margin-right: 10px !important;
+    margin-top: 2px !important;
+}
+
+    .OperationModalBtns span {
+        display: none !important;
+    }
+
+    .OperationModalBtns:hover > span {
+        display: inline-block !important;
+    }
+
+/*If backBtn Added for ReactTable following css Enabled*/
+/*.backBtnAdded .ant-pagination {
+    margin: 10px 35px 0 0 !important;
+}
+.backBtnCSS {
+    font-size: 16px !important;
+    float: right !important;
+    color: rgb(246, 71, 68) !important;
+    padding: 0 4.5px!important;
+    height: 25px !important;
+    border: 1px solid rgb(246, 71, 68) !important;
+    border-radius: 30px !important;
+}*/
+
+
+/* TopBar Form Label CSS */
+.topBar-info-label {
+    float: right !important;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+li.AcceptHighLight,
+li.NotAcceptHighLight {
+    padding-left: 30px !important;
+}
+
+.ProgramList,
+.VariableList,
+.DatasetList {
+    padding-left: 5px;
+    font-size: 10px !important;
+    letter-spacing: 1px;
+    font-weight: 300 !important;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.arrow-down-icon > .ProgramList,
+.arrow-right-icon > .ProgramList {
+    padding-left: 0px;
+}
+
+.arrow-down-icon > span.AcceptHighLight,
+.arrow-down-icon > span.NotAcceptHighLight {
+    padding-left: 0px !important;
+}
+
+span.AcceptHighLight,
+span.NotAcceptHighLight {
+    padding-left: 20px !important;
+}
+
+.AcceptHighLight::after {
+    transition: all 0.2s ease-in !important;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 11px !important;
+    content: "\f00c" !important;
+    position: absolute !important;
+    border-bottom: 2px solid green;
+    width: 100px !important;
+    margin-left: 0px !important;
+    color: green;
+    left: 15px !important;
+    top: 0 !important;
+    z-index: 1 !important;
+    cursor: pointer;
+}
+
+
+.NotAcceptHighLight::after {
+    transition: all 0.2s ease-in !important;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 13px;
+    content: "\f00d" !important;
+    position: absolute;
+    border-bottom: 2px solid red;
+    width: 100px !important;
+    margin-left: 0px;
+    color: red;
+    left: 15px !important;
+    top: 0 !important;
+    z-index: 1 !important;
+    cursor: pointer;
+}
+
+span.AcceptHighLight::before {
+    width: 15px;
+    height: 10px;
+    content: "";
+    z-index: 1;
+    left: 12px;
+    top: 10px;
+    background-color: #1a2932;
+    position: absolute;
+}
+
+span.NotAcceptHighLight::before {
+    width: 15px;
+    height: 10px;
+    content: "";
+    z-index: 1;
+    left: 12px;
+    top: 10px;
+    background-color: #1a2932;
+    position: absolute;
+}
+
+.arrow-right-icon::after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    content: "\f105" !important;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    cursor: pointer;
+}
+
+.arrow-down-icon::after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    content: "\f107";
+    width: 15px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    cursor: pointer;
+}
+
+.arrow-right-icon > ul {
+    display: none;
+    transition: all 0.3s ease-in !important;
+    -webkit-transition: all .3s ease-in !important;
+}
+
+#droppedDiv {
+    background: #1a2932 !important;
+    color: #ffffff !important;
+    font-weight: bold;
+    min-height: calc(100vh - 188px);
+    padding: 10px 20px;
+    max-height: calc(100vh - 200px);
+    white-space: nowrap;
+    overflow: auto;
+}
+
+li#GrandParentDiv {
+    margin-left: -15px;
+    padding-left: 30px;
+}
+
+.GrandParentTree span {
+    cursor: grab;
+}
+
+.GrandParentTree,
+.GrandParentTree ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .GrandParentTree ul {
+        margin-left: 0.4em;
+        position: relative;
+        cursor: default;
+    }
+
+        .GrandParentTree ul li.arrow-down-icon {
+            padding-left: 30px;
+        }
+
+        .GrandParentTree ul li.arrow-right-icon {
+            padding-left: 30px;
+        }
+
+        .GrandParentTree ul ul {
+            margin-left: .3em;
+        }
+
+        .GrandParentTree ul:before {
+            content: "";
+            display: block;
+            width: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -16px;
+            border-left: 1px solid rgba(255,255,255,0.3);
+        }
+
+    .GrandParentTree li {
+        margin: 0;
+        padding: 0 0.8em;
+        line-height: 2em;
+        font-weight: 700;
+        position: relative;
+        cursor: default;
+    }
+
+    .GrandParentTree ul li:before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 0;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        margin-top: -1px;
+        position: absolute;
+        top: 1em;
+        left: -16px;
+    }
+
+    .GrandParentTree ul li:last-child:before {
+        background: #1a2932;
+        height: auto;
+        top: 1em;
+        bottom: 0;
+    }
+
+    .GrandParentTree ul,
+    .GrandParentTree li {
+        cursor: default;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+
+.add-constant-btn {
+    text-align: center;
+    color: #3a5f72;
+    cursor: grab;
+}
+
+    .add-constant-btn :hover {
+        color: #3a5f72 !important;
+    }
+
+    .add-constant-btn::before,
+    .add-constant-btn::after,
+    .add-constant-btn > span::before,
+    .add-constant-btn > span::after {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: transparent;
+        transition: 1s;
+        /* -webkit-mix-blend-mode: hue; */
+    }
+
+    .add-constant-btn:hover::before {
+        top: 0px;
+        left: 10px;
+        border-top: 1px solid #3a5f72;
+        border-left: 1px solid #3a5f72;
+    }
+
+    .add-constant-btn:hover::after {
+        top: 0px;
+        right: 10px;
+        border-top: 1px solid #3a5f72;
+        border-right: 1px solid #3a5f72;
+    }
+
+    .add-constant-btn:hover > span::before {
+        bottom: 0px;
+        left: 10px;
+        border-bottom: 1px solid #3a5f72;
+        border-left: 1px solid #3a5f72;
+    }
+
+    .add-constant-btn:hover > span::after {
+        bottom: 0px;
+        right: 10px;
+        border-bottom: 1px solid #3a5f72;
+        border-right: 1px solid #3a5f72;
+    }
+
+.dragAddConstant {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: -18px;
+    color: #3a5f72 !important;
+}
+
+.add-constant-btn:hover ~ .dragAddConstant {
+    display: block;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+#programConstruct,
+#sourceVariable {
+    cursor: grab;
+    cursor: -moz-grab;
+    text-transform: uppercase;
+    cursor: -webkit-grab;
+}
+
+    #programConstruct:active,
+    #sourceVariable:active {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+    }
+
+ul#dropHereNode {
+    margin-left: 25px;
+}
+
+li.antMenu-Program,
+li.antMenu-Variable,
+li.antMenu-Dataset {
+    padding: 0px 10px !important;
+    margin: 0 !important;
+    font-size: 12px !important;
+    line-height: 35px !important;
+    height: 35px !important;
+}
+
+.errorMsgDiv > ul {
+    margin: 0;
+    padding: 0;
+}
+
+    .errorMsgDiv > ul > li {
+        list-style-type: none;
+    }
+/* Treeview Mapping ul li css Ends*/
+/* onHover and OnClick Project shows Its own Edit, Delete, Config Icons Starts*/
+.isoSingleContact .isoEditBtn,
+.isoSingleContact .isoDeleteBtn,
+.isoSingleContact .isoConfigBtn,
+.isoSingleContact .isoAudit{
+    display: none;
+}
+
+
+/*.isoSingleContact:hover .isoEditBtn,
+.isoSingleContact:hover .isoDeleteBtn,
+.isoSingleContact:hover .isoConfigBtn,
+.isoSingleContact:hover .isoAudit {
+    display: contents;
+}
+*/
+
+.isoSingleContact.active .isoEditBtn,
+.isoSingleContact.active .isoDeleteBtn,
+.isoSingleContact.active .isoConfigBtn,
+.isoSingleContact.active .isoAudit{
+    display: contents;
+}
+/* onHover and OnClick Project shows Its own Edit, Delete, Config Icons Ends*/
+
+
+/* onHover, onclick, defaultActive studyList count dropDown Color css*/
+.studylist-dropdown:hover {
+    background-color: rgba(55, 91, 109, 0.2) !important;
+}
+
+.studylist-dropdown:active {
+    background-color: rgba(55, 91, 109, 0.2) !important;
+}
+.ant-select-dropdown, .ant-select-dropdown-menu-item {
+    border-radius: 15px !important;
+}
+.ant-select-dropdown-menu{
+    background-color:transparent;
+}
+
+.studylist-dropdown.ant-select-dropdown-menu-item-active {
+    background-color: rgba(55, 91, 109, 0.2) !important;
+}
+
+
+/*Save Button Colors CSS*/
+.saveBtn:not([disabled]),
+.ant-btn.saveBtn:not([disabled]):focus {
+    background-color: #4CAF50 !important;
+    color: #fff !important;
+    border-color: #4CAF50 !important;
+}
+
+.ant-btn.saveBtn:not([disabled]):hover {
+    background-color: white !important;
+    color: green !important;
+    border-color: green !important;
+}
+
+.ant-btn.editBtn:not([disabled]):hover {
+    background-color: #fff !important;
+    color: #375b6d !important;
+    border-color: #375b6d !important;
+}
+
+/* ant btn clicked effect disabled css*/
+.ant-btn-clicked:after {
+    animation: none !important;
+}
+
+
+.ant-btn:not(.reacTable-addbtn)hover {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/*Cancel Button Colors CSS*/
+.ant-btn-danger,
+.ant-btn-danger:focus {
+    background-color: #f44336 !important;
+    border-color: #f44336 !important;
+    color: #ffffff !important;
+}
+
+    .ant-btn-danger:hover {
+        background-color: white !important;
+        color: red !important;
+        border-color:red !important;
+    }
+/* default btn*/
+.ant-btn-default,
+.ant-btn-default:focus {
+    background-color: #2b2b2b;
+    border-color: #2b2b2b !important;
+    color: #ffffff !important;
+}
+
+    .ant-btn-default:hover {
+        background-color: white !important;
+        color: black !important;
+        border-color: black !important;
+    }
+
+
+
+
+/* default primary btn */
+.ant-btn-primary:hover {
+    color: #4482FF !important;
+    background-color: #fff !important;
+}
+
+/* Changed Background color for ReactTable ADD button */
+.reacTable-addbtn {
+    background-color: #375b6d;
+    color: #fff !important;
+    height: 36px !important;
+    border-color: #375b6d !important;
+}
+
+    /* Changed Background color for ReactTable ADD button onHover and onFocus */
+    .reacTable-addbtn:hover {
+        background-color: #fff;
+        color: #375b6d !important;
+        border-color: #375b6d !important;
+    }
+
+    .reacTable-addbtn:focus {
+        background-color: #375b6d;
+        color: #fff !important;
+        border-color: #375b6d !important;
+    }
+
+
+/*Footer Styles Starts*/
+.footer {
+    color: white;
+    background: #16222A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3A6073, #16222A); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 25px;
+}
+
+.footer-Copyrights {
+    padding-top: 3px;
+    display: block;
+    text-align: center;
+}
+
+/*Footer Styles Ends*/
+
+/* success and error modal center align css */
+.ant-confirm {
+    top: 33vh !important;
+}
+
+.ant-modal-body .hKRXxu {
+    overflow: unset !important;
+}
+
+.studyModal .ant-modal-body {
+    max-height: calc(100vh - 120px);
+    overflow: auto !important;
+}
+
+.studyModal .ant-modal-body {
+    max-height: calc(100vh - 190px);
+}
+
+    .ant-form-item-label {
+    padding: 0 !important;
+    line-height: 2.5 !important;
+}
+
+.errorMsgTooltip {
+    display: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px !important;
+    position: fixed;
+    z-index: 99999;
+    max-width: 300px;
+    white-space: normal;
+    word-wrap: break-word;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 10px !important;
+    line-height: 1.5;
+}
+
+    .errorMsgTooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        margin-left: 0px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+    }
+
+.ant-form-explain:hover ~ .errorMsgTooltip {
+    display: block;
+    opacity: 1;
+}
+
+.ant-form-explain {
+    font-size: 10px !important;
+}
+
+/*added change reason textbox and error message for space*/
+.ant-form-explain, .ant-form-extra {
+    margin-top: 7px !important;
+}
+
+.ant-form-vertical .ant-form-explain, .ant-form-vertical .ant-form-extra {
+    margin-top: 2px !important;
+    font-size: 10px !important;
+    float: right;
+    text-align: right;
+   white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*custom tooltip for table td text on ellipsis*/
+.toolTip {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+}
+
+.toolTipText {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px !important;
+    position: fixed;
+    z-index: 99999;
+    max-width: 300px;
+    white-space: normal;
+    word-wrap: break-word;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 10px !important;
+}
+
+.toolTip .toolTipText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    margin-left: 0px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.activeToolTip:hover ~ .toolTip .toolTipText {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Multiple select dropdown css*/
+.ant-select-selection--multiple {
+    max-height: 64px;
+    overflow: auto;
+}
+
+    .ant-select-selection--multiple .ant-select-selection__placeholder {
+        margin-left: 10px;
+    }
+/*Table pagination css*/
+.ant-pagination-item-active {
+    background-color: #1e2e38 !important;
+    border-color: #1e2e38 !important;
+}
+
+    .ant-pagination-item-active a {
+        color: #fff !important;
+    }
+
+
+/* Label title hiding css*/
+label:not(.ant-checkbox-wrapper):not(.ant-radio-wrapper):not([id*="searchWholeWordLabel"]):not([for*="searchCaseSensitiveInput"]):not([for*="searchAnyWordInput"]):not(.dvUi-button):not([for*= "annotation_fill_input"]) {
+    pointer-events: none !important;
+}
+
+/*Table serial Css Starts*/
+body {
+    counter-reset: Serial; /* Set the Serial counter to 0 */
+}
+
+.auto-index table {
+    border-collapse: separate;
+}
+
+.auto-index tr td:first-child:before {
+    counter-increment: Serial; /* Increment the Serial counter */
+    content: counter(Serial); /* Display the counter */
+}
+
+/*if text datalist too long input table column*/
+td.ant-table-column-has-actions.ant-table-column-has-sorters {
+    word-break: break-word;
+}
+
+i.anticon.anticon-close.ant-modal-close-icon {
+    font-size: 13px;
+}
+
+span.ant-modal-close-x {
+    height: 50px
+}
+
+.TextArea_FormItem .ant-form-explain {
+    margin-top: -73px;
+}
+
+#projectListSearch .ant-input-suffix {
+    right: 12px !important;
+}
+
+#standardListSearch .ant-input-suffix, #sourceVariableSearch .ant-input-suffix, #programConstructSearch .ant-input-suffix {
+    right: 12px !important;
+}
+
+
+/* Workflow floating button css starts*/
+.round {
+    border-radius: 50%;
+}
+
+.fab {
+    transition: all 300ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    font-size: 2em;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16), 0px 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+    .fab i {
+        transition: all 300ms ease-in-out;
+        will-change: transform;
+    }
+
+.inner-fabs .fab {
+    right: 33px;
+    top: 13px;
+    font-size: 1.5em;
+    will-change: bottom;
+}
+
+.inner-fabs.show .fab:nth-child(1) {
+    top: 110px;
+}
+
+.inner-fabs.show .fab:nth-child(2) {
+    top: 65px;
+}
+
+
+.inner-fabs.show + .fab i {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.fab:before {
+    content: attr(data-tooltip);
+    transition: opacity 150ms cubic-bezier(0.4, 0, 1, 1);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    color: #ececec;
+    right: 50px;
+    top: 25%;
+    background-color: rgba(70, 70, 70, 0.9);
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 1em;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 2px;
+    padding: 6px 8px;
+    max-width: 200px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat', sans-serif !important;
+    vertical-align: middle;
+}
+
+.inner-fabs.show .fab:hover:before {
+    content: attr(data-tooltip);
+    visibility: visible;
+    opacity: 1;
+}
+/* Workflow floating button css ends*/
+
+
+.dashboardBox .ant-table-placeholder {
+    padding: 0px;
+}
+
+.dashboardBox .ant-empty-normal {
+    margin: 19px 0px;
+}
+/*pointer event none when project inactive*/
+div[customPointerEvent="customPointerEvent"], li[customPointerEvent="customPointerEvent"] {
+    pointer-events: none;
+}
+
+/* Dataset validation page rulequery filed custom css*/
+.textarea-custom + .ant-form-explain {
+    margin-top: -73px;
+}
+
+/* Css for Multi select dropdown */
+.ant-form-vertical .ant-form-item-control {
+    line-height: 0.5;
+}
+
+#study_step2 .ant-divider-horizontal {
+    margin: 0 0 25px 0;
+}
+/*sourcedata table alignment issue*/
+.overlayTable .ant-table-fixed tbody tr td, th {
+    word-break: break-word;
+}
+
+.overlayTable .ant-table-body {
+    overflow: auto !important;
+}
+
+.overlayTable .ant-table-scroll > .ant-table-header > .ant-table-fixed {
+    padding-right: 0px !important;
+}
+
+.overlayTable .ant-table-scroll > .ant-table-header {
+    padding-right: 0px !important;
+}
+
+#defineBotTable {
+    height: calc(100vh - 153px);
+}
+
+.studyDIV {
+    width: 100% !important;
+    box-shadow: 1px 1px 12px 2px rgba(0,0,0,0.2) !important;
+    margin-bottom: 5px !important;
+    padding: 0px !important;
+}
+
+.studyHead {
+    background: linear-gradient(to left, #3A6073, #16222A) !important;
+    color: #ffff;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 2px 5px 2px;
+}
+
+div[name = 'forMappingAdd'] {
+    border-bottom: 0px !important;
+}
+
+
+
+    div[name = 'forMappingAdd'] .isoNoteText {
+        padding: 8px !important;
+    }
+
+.operationalModal .ant-modal-body {
+    padding: 0px 5px 0px 5px !important;
+}
+
+.studyWorkflow .ant-modal-body {
+    overflow:auto;
+    max-height: calc(100vh - 170px);
+}
+
+/*div.ant-form-item-control {
+    line-height: 27px !important;
+}*/
+
+
+
+.ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner-full {
+    margin-top: -7px;
+}
+
+/*Loader NProgress*/
+#nprogress .bar {
+    display: none;
+}
+
+#nprogress {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .45);
+    filter: alpha(opacity=50);
+    pointer-events: auto !important;
+}
+
+    #nprogress .spinner {
+        color: #16222A !important;
+    }
+
+    #nprogress .spinner-icon {
+        border: solid 3px transparent;
+        width: 30px !important;
+        height: 30px !important;
+        border-top-color: #16222A;
+        border-left-color: #16222A;
+    }
+
+
+.spinner {
+    color: #16222A !important;
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    z-index: 1000;
+    z-index: 1000;
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+}
+/*END Loader NProgress*/
+
+/*Manoco*/
+
+div[data-type='Resizer'] {
+    height: 5px;
+    border: 1px solid lightgrey;
+    margin: 5px 0px;
+}
+
+.dv-toolbar div[id*= 'docuViewareLogoMobile'] {
+    padding-left: 5px !important;
+}
+
+/*datasetTree page tab css*/
+#mapTree .ant-tabs .ant-tabs-content {
+    padding-bottom: 0px !important
+}
+
+/*Treview canrd*/
+.treeviewCard .ant-card-head-wrapper:hover {
+    color: blue;
+    cursor: pointer
+}
+
+.treeviewCard {
+    margin-bottom: 20px;
+    height: 120px;
+}
+
+    .treeviewCard > .ant-card-head {
+        text-align: center;
+    }
+
+    .treeviewCard > .ant-card-body {
+        padding: 20px 15px !important;
+    }
+
+#treeview_layout {
+    padding: 0px !important;
+}
+/*Treeview/index page center div */
+.homePdfDivRow {
+    background: rgb(236, 236, 236);
+}
+
+.HomeStyle {
+    margin: auto;
+    max-width: 800px;
+    min-width: 740px;
+}
+
+@media only screen and (max-width: 800px) {
+    /*Treeview/index page center div */
+    .HomeStyle {
+        margin: auto;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+/*//esign verification input study*/
+.EsignCheck {
+    line-height: 1.5 !important;
+}
+
+/*//Study create page css*/
+
+.studyCreation div.ant-modal-content .ant-modal-close-x {
+    width: 53px !important;
+}
+
+.spread {
+    margin-left: 3.5px;
+    margin-right: 3.5px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+    .spread .page, .pdfViewer.scrollHorizontal .page, .pdfViewer.scrollWrapped .page {
+        margin-left: -3.5px;
+        margin-right: -3.5px;
+    }
+
+    .spread .page, .pdfViewer.scrollHorizontal .page, .pdfViewer.scrollWrapped .page, .pdfViewer.scrollHorizontal .spread, .pdfViewer.scrollWrapped .spread {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .spread .page, .pdfViewer.scrollHorizontal .page, .pdfViewer.scrollWrapped .page {
+        margin-left: -3.5px;
+        margin-right: -3.5px;
+    }
+
+.handsontable thead th:not(#MetaDataAnnotation_Table thead th):not(#AlterStdVariable_Table theade th):not(#AlterStd_Table theade th) {
+    padding: 0;
+    background-color: #b0bfc6 !important;
+    font-weight: 500 !important;
+    color: #2d2e2f !important;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%) !important;
+}
+
+.handsontable tr:nth-child(even):not(#MetaDataAnnotation_Table tr:nth-child(even)):not(#AlterStdVariable_Table tr:nth-child(even)):not(#AlterStd_Table tr:nth-child(even)) {
+    background-color: #f2f2f2 !important;
+}
+
+
+
+.handsontable tr td:not(#MetaDataAnnotation_Table tr td):not(#AlterStdVariable_Table tr td):not(#AlterStd_Table tr td) {
+    padding: 6px 6px !important;
+    border: 0px !important;
+}
+.handsontable tr td:not(#MetaDataAnnotation_Table tr td) div:not(#AlterStdVariable_Table tr td) div:not(#AlterStd_Table tr td) div {
+    margin: 0px 5px;
+}
+.handsontable thead th .relative:not(#MetaDataAnnotation_Table thead th .relative)
+{
+    padding: 6px 6px !important;
+}
+/*995 filters list user page*/
+/*Zoho issue*/
+/*.htFiltersConditionsMenu table.htCore {
+    margin-top: -100px !important;
+}*/
+/*added for label forgot password(security questions)*/
+.ant-form-item-label label {
+    line-height: 25px !important;
+} .ht_master {
+    border-radius: 5px !important;
+} .fcfmNQ.ant-btn.ant-btn-circle.ant-btn-sm, .fcfmNQ.ant-btn.ant-btn-circle-outline.ant-btn-sm {
+    top: 0px !important;
+    left: 0px !important;
+} .list-transition-enter, .list-transition-appear {
+    /*We give the list the initial dimension of the list button*/
+    opacity: 0;
+    transform: scale(0.9);
+}
+/* This is where we can add the transition*/
+.list-transition-enter-active, .list-transition-appear-active {
+    -ms-transform: translate(0%,-50%);
+    -webkit-transform: translate(0%,-50%);
+    transform: translate(0%,-50%);
+    position: absolute;
+    transition: all 0.6s ease;
+} .alert-enter, .alert-appear {
+    opacity: 0;
+    transform: scale(0.9);
+} .alert-enter-active, .alert-appear-active {
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+} .alert-exit {
+    opacity: 1;
+} .alert-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+} .annotPageView {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+} .contentTabPadding {
+    padding: 4px 16px !important;
+} .context-menu-root {
+    z-index: 2147483647 !important;
+} .context-menu-root > li {
+        clear: both;
+        margin: 0;
+        padding: 5px 12px;
+        color: rgba(0,0,0,.85);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        white-space: nowrap;
+        cursor: pointer;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    } .customCodeMirror {
+    height: 100%;
+} .parentFulHeight {
+    height: 100%
+} defineRightLeftIcon svg {
+    font-size: 18
+} .defineRightLeftIcon svg:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+} .defineRightLeftIcon svg:hover:after {
+        -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+        -moz-animation: sonarEffect 1.3s ease-out 75ms;
+        animation: sonarEffect 1.3s ease-out 75ms;
+    }
+/*topBarDisplayName css*/
+#topBarDisplayName {
+    border: 1px solid;
+    border-color: #FFFFFF;
+    /* border-color: var(--header-item-font-color); */
+    background: #3A6073;
+    color: #ffff;
+} #topBarDisplayName span.displayNameSpan {
+        font-size: 16px;
+    } #topBarDisplayName span.displayNameSpan {
+    font-size: 16px;
+} div.UserAssignedPop .ant-modal-content .ant-modal-body .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns {
+    float: none;
+} .UserAssignedPopsaveBtn {
+    float: right;
+} .myProfileDetails .ant-modal-body #middleDiv{
+    max-height:calc(100vh - 250px);
+    overflow:auto;
+    padding-bottom: 10px;
+} div.UserAssignedPop .ant-modal-body .ant-modal-confirm-body-wrapper .ant-modal-confirm-body .ant-modal-confirm-content {
+    max-height: calc(100vh - 305px);
+    overflow: auto;
+}
+/*Cancel Button Colors CSS*/
+.ant-btn-predict, .ant-btn-predict:focus {
+    background-color: rgb(33, 62, 78) !important;
+    border-color: rgb(33, 62, 78) !important;
+    color: #ffffff !important;
+} .ant-btn-predict:hover {
+    background-color: #fff !important;
+    color: rgb(33, 62, 78) !important;
+    border-color: rgb(33, 62, 78) !important;
+} .ant-btn-pdfsave, .ant-btn-pdfsave:focus {
+    background-color: rgb(3, 130, 212) !important;
+    border-color: rgb(33, 62, 78) !important;
+    color: #ffffff !important;
+} .ant-btn-pdfsave:hover {
+    background-color: #fff !important;
+    color: rgb(3, 130, 212) !important;
+    border-color: rgb(3, 130, 212) !important;
+} ul.PasswordRules {
+    list-style-type: square;
+} ul.PasswordRules {
+    list-style-type: square;
+} .hiddenPredict{
+    display:none !important;
+}
+/*Mapping page checkbox CSS*/
+.mapcheckcontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.mapcheckcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.flexdiv {
+    display: flex;
+    width:100%;
+    align-items: center;
+} .predict_text_annotation {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    text-align: left;
+}
+/**/
+.annot_src_error, .annot_tar_error {
+    border-color: red !important;
+} .annot_noerror {
+    border-color: rgb(100, 100, 100) !important;
+} .annot_spanerror {
+    float: right;
+    color: red;
+}
+/*End*/
+.has-error .ant-select-selection {
+    border-color: #f5222d !important;
+} .has-error .ant-input, .has-error .ant-input:hover {
+    background-color: #fff;
+    border-color: #f5222d !important;
+}
+/*activity config card*/
+.activityconfigcard .ant-card-body {
+    min-height: 95px;
+    max-height: 95px;
+    padding: 15px 0px 5px 0px;
+} .activitycardtext {
+    padding: 0px 10px;
+} .activitycarddrop {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+} .activityconfigcard .ant-card-head {
+    padding: 0px 10px;
+}
+/*end*/
+.activityconfigcard .ant-card-head-wrapper:hover {
+    color: blue;
+    cursor: pointer
+} .activityconfigcard > .ant-card-head {
+        text-align: center;
+    }
+/* for temp fix*/
+.dynamicModal .ant-modal-confirm-btns {
+    width:100%;
+} .rightBtnPop{
+    float:right;
+} .ant-switch-loading, .ant-switch-disabled {
+     opacity: unset !important; 
+} .ant-form-explain{
+    float: right !important;
+}
+/*Comment Validation in PDF Annotation*/
+#comment_error, #author_error {
+color:red;
+float:right;
+width:auto;
+} .annot_textArea:focus {
+    outline: 0 !important;
+} .annot_textArea, .annot_commentinput {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+/*End*/
+/*Color of switch field in Annotation Acticty pop up*/
+button#AnnotationRequired[disabled] span.ant-switch-inner {
+    color: rgba(0,0,0,0.5) !important;
+}
+/*Demo _update*/
+/*Transbot1.0.1 ---#12*/
+.customBox{
+    height:calc(100% - 47px) !important;
+}
+/*Output generation page*/
+.outputgen_icon {
+    margin-left: 5px;
+} .ouputgeneration_footerbtn {
+    margin-top: 10px;
+} .op_view, .op_view:focus {
+    background: orange;
+    color: white !important;
+} .op_view:hover {
+        color: orange !important;
+        background: #fff;
+        border: 1px solid orange !important;
+    } .op_tabs {
+    height: 100%;
+    overflow: initial;
+    display: flex;
+    flex-direction: column;
+} .op_parent_div {
+    padding: 5px;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+} .op_tabs .ant-tabs-content {
+    padding-bottom: 0px !important;
+} .op_pydiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} .op_pyrow {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*Demo custom css*/
+.Custom_ReactQuill .ant-form-item-control {
+    line-height: 18px !important;
+} .Custom_ReactQuill .ant-form-item-control-wrapper {
+    width: 100%
+} .has-error #EmailTemplateAdd_emailBody {
+    background-color: #fff;
+    border: 1px solid #f5222d !important;
+}
+/*dashboard_css*/
+.dash_main_div_full, .dash_main_div_full .ant-card-body {
+    height: 100%;
+} .dash_main_div_full_flex, .dash_main_div_full_flex .ant-card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column
+} .dash_main_div {
+    height: 100%;
+    padding: 0px 5px 5px 5px !important;
+} .dash_main_select {
+    width: 100%;
+} .dash_main_card .ant-card-body {
+    padding-top: 5px !important;
+} #EmailTemplateAdd_emailBody .ql-container {
+    max-height: calc(100vh - 370px);
+    overflow: auto;
+} .formitem_reactQuill_wrap {
+    margin-bottom: 0px !important;
+} .isoComposeMailWrapper {
+    padding: 6px !important;
+}
+/*dynamic page height*/
+.emailtemp_layoutcontwraper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column !important;
+} .emailtemplate_layoutcontent {
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} .emailtemplate_form {
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} .email_isoComposeMailWrapper {
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} .flex_focus_child, .flex_focus_child .ant-form-item-control-wrapper, .flex_focus_child .ant-form-item-control, .flex_focus_child .ant-form-item-children, .flex_focus_child #EmailTemplateAdd_emailBody, .flex_focus_child .ql-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} .flex_focus_child .has-error .ant-form-explain, .flex_focus_child .has-success .ant-form-explain {
+        text-align: right;
+    } .flex_focus_div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*Header Content*/
+.sideToggleBtn {
+    margin-left: 5px;
+} .sas_opgen .monaco-editot-custom {
+   /* overflow:auto;*/
+} .sas_opgen .ant-tabs-content.ant-tabs-content-no-animated.ant-tabs-top-content.ant-tabs-card-content {
+    overflow:hidden;
+}
+/*CUSTOM CSS PROGRESS*/
+.dynamicprogressbar_div {
+    opacity: 0.8;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 2147483647;
+    top: 0;
+    left: 0;
+    position: fixed;
+} .ant-progress-text {
+    color: #FFFF !important;
+} .dynamicprogressbar {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    font-size: 12px !important;
+    top: 50%;
+    text-align: center;
+} .dynamic_progressbar {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    font-size: 12px !important;
+    top: 65%;
+    color: #ffff;
+    text-align: center;
+} .ant-progress-inner {
+    width: 70px !important;
+    height: auto !important;
+}
+/*MetaDataAnnotation Page*/
+#MetaDataNoFilter {
+    width: 100%;
+    padding: 10px;
+    color: #555;
+    text-align: center;
+}
+/*#MetaDataAnnotation_Table {
+    border-left: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important;
+    border-bottom: 1px solid #ccc !important;
+}
+#MetaDataAnnotation_Table td:first-of-type {
+    border-left: 0px !important;
+}
+#MetaDataAnnotation_Table td:last-of-type{
+}*/
+.SourceDatasetTab {
+    overflow-y:hidden !important;
+} .rightbutton{
+    float:right;
+} .paddingTop{
+    padding:5px;
+}
+/*Study Congif page*/
+/*workflow*/
+.workflow_timeline {
+    height:calc(100vh - 149px);
+    overflow:auto;
+} .roleAssignParentDiv {
+    height: calc(100vh - 173px);
+    overflow: auto;
+} @media only screen and (max-width: 800px) {
+    /*Treeview/index page center div */
+    .workflow_timeline {
+        height: 200px;
+        overflow: auto;
+    }
+}
+/*upload*/
+.CustomFileInput {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+} .CustomFileText {
+    position: absolute !important;
+    height: 100%;
+    border: 0px !important;
+}
+/*Browse CSS*/
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+} .input-group-prepend {
+    margin-right: -1px;
+} .input-group-append, .input-group-prepend {
+    display: -ms-flexbox;
+    display: flex;
+} .custom-file-input {
+    position: relative;
+    z-index: 2;
+    height: calc(2.25rem + 2px) !important;
+    margin: 0;
+    opacity: 0;
+    margin-left: -109px !important;
+    width: 110px !important;
+} .custom-file-label {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} .input-group > .custom-file:not(:first-child) .custom-file-label {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+} .input-group > .custom-file {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid lightgray;
+} .input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+} .custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    height:32px;
+} .notValidRecord td {
+    color:red !important;
+}
+/*Step*/
+.ant-steps-dot .ant-steps-item-process .ant-steps-item-icon, .ant-steps-dot.ant-steps-small .ant-steps-item-process .ant-steps-item-icon{
+    width:8px !important;
+    height:8px !important;
+} .ant-steps-dot .ant-steps-item-tail, .ant-steps-dot.ant-steps-small .ant-steps-item-tail {
+    top:0px;
+} .ant-steps-item-icon > .ant-steps-icon{
+    top:7px;
+} .ant-steps-label-vertical .ant-steps-item-content{
+    /*text-align:start;*/
+} .ant-steps-item-title{
+    font-size:13px;
+} .steps-content {
+    padding: 20px 0px 0px 0px;
+}
+/*Import */
+.parentimportcheckbox{
+    margin-right:3px
+} #ImportFromMappingLibrary {
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+} .IMPACTED_ROW td{
+    color:red !important;
+} .errparatag{
+    padding:5px 0px;
+} .metadataAnnotBox {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0px 10px 0px !important;
+    height: calc(100vh - 83px);
+    margin: 0px !important;
+} .divider-cs {
+    margin: 0px;
+    min-width: 98%;
+    margin-left: 10px;
+    width: 98%;
+} .divHeight {
+    height: calc(100vh - 115px);
+}
+/*ImportTable*/
+.ImportTable td:last-child{
+    word-break:normal !important;
+    white-space:normal !important;
+} .MapperWorkspace_Tabs .ant-tabs-content {
+padding-bottom:0px !important;
+}
+/*Metadata prediction*/
+.resultmetadata .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+    height: 329px;
+    margin:0px;
+} .resultmetadata {
+    padding:0px !important;
+}
+/*end*/
+/*Content tab.js css*/
+.boxwrappercontenttab {
+    margin: 0px !important;
+}
+/*Metadata annot button and @a tag css*/
+.aTagInMetaAnnot {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+} .resetbtn {
+    height: 27px !important;
+} .resetbtn:hover, .resetbtn:focus {
+    border-color: #2b2b2b !important;
+    color: #2b2b2b !important
+} .metaAnnotArrow {
+    font-size: 20px;
+    float: right;
+    margin-top: 3px;
+    cursor:pointer;
+}
+/*    .metaAnnotArrow svg:focus, .metaAnnotArrow svg:hover {
+        border-color: #2b2b2b !important;
+        fill: #FFFF !important;
+        color: #2b2b2b !important
+    }*/
+.handsontable .ht_readonly {
+    cursor: not-allowed;
+    background-color: #e5e5e5 !important;
+} #MetaDataAnnotation_Table.handsontable .autocompleteEditor.handsontable {
+padding-right:0px !important;
+}
+/*END Metadata annot button and @a tag css*/
+/*.handsontableEditor.autocompleteEditor.handsontable.listbox {
+    height: 300px !important;
+}
+
+*/
+/*View Study COnfig Page*/
+.isoContactCardInfos .isoInfoLabel{
+    min-width: 250px !important;
+} .StudyConfigModal {
+    padding: 0px !important;
+    height: calc(100vh - 35px);
+} .StudyConfigModal .ant-modal-content {
+    height: 100%;
+}
+
+    .StudyConfigModal .ant-tabs-content {
+        padding-bottom: 0px !important;
+    }
+.NoPaddingBottom {
+    padding-bottom:0px !important;
+} .studyConfig_StdSpec_Parent {
+    height: calc(100vh - 108px) !important;
+} .studyConfig_StdSpec_Parent .isoNoteListWrapper {
+    height: calc(100vh - 45px) !important;
+} .studyConfig_SrcDataset_Parent {
+    height: calc(100vh - 109px) !important;
+} .studyConfig_SrcDataset_Parent .isoNoteListWrapper {
+    height: calc(100vh - 109px) !important;
+}
+/*View Study COnfig Page END*/
+.ant-table-wrapper {
+    margin-block-end: 8px !important;
+    margin-top: 5px !important;
+} div::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+    border-bottom: 1px solid #7b7b7b !important;
+} div::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2) !important;
+    background: #90A4AE !important;
+    margin-bottom: 10px !important;
+} div::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background: #fff !important;
+    /*background: #CFD8DC !important;*/
+    border-radius: 0 !important;
+} ul::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+    border-bottom: 1px solid #7b7b7b !important;
+} ul::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2) !important;
+    background: #90A4AE !important;
+    margin-bottom: 10px !important;
+} ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background: #fff !important;
+    /*background: #CFD8DC !important;*/
+    border-radius: 0 !important;
+}
+/*study table status dropdown disable*/
+a[disabled] {
+    color: rgba(0, 0, 0, 0.25) !important;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+/*custom codelist page layout content*/
+.CustomCodelist_LayoutContent {
+    height:calc(100vh - 170px)
+} @media only screen and (max-width: 1000px) {
+    .CustomCodelist_LayoutContent 
+    {
+        height: auto
+    }
+    .CustomCodelist_LayoutContent .ant-table-body 
+    {
+        max-height:500px !important;
+    }
+}
+/*end custom codelist page layout content*/
+/*Generate Define Page table*/
+.Generate_Define_Table .ant-table-body {
+    max-height: calc(100vh - 316px)
+} @media only screen and (max-width: 1000px) {
+ 
+
+    .Generate_Define_Table .ant-table-body {
+        max-height: 500px !important;
+    }
+    .Mapping_Table .ant-table-body {
+        max-height: 500px !important;
+    }
+}
+
+
+button.ant-btn.disabledEnabled.tealbtn {
+    background-color: transparent !important;
+}
+
+/*TargetVariableCreation.js*/
+.Tar_Domain_Select_Label {
+    color: black !important;
+    line-height: 25px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-right: 5px;
+}
+
+/*Margin*/
+.marginBottomFive{
+    margin-bottom:5px;
+}
+/*Margin*/
+.marginBottomTen {
+    margin-bottom: 10px;
+}
+.errOrderLi{
+    margin:0px 10px;
+}
+.marginTopBottomFive {
+    margin: 5px 0px;
+}
+
+.errorpop_map {
+    font-weight:bold;
+}
+
+.tar_var_create:focus {
+    background-color: #375b6d;
+    color: #375b6d;
+    border-color: #375b6d !important;
+}
+
+
+/* Changed Background color for ReactTable ADD button */
+.tar_var_create {
+background-color: #375b6d;
+color: #fff !important;
+height: 36px !important;
+border-color: #375b6d !important;
+}
+
+/* Changed Background color for ReactTable ADD button onHover and onFocus */
+.tar_var_create:hover {
+    background-color: #fff;
+    color: #375b6d !important;
+    border-color: #375b6d !important;
+}
+
+.tar_var_create:focus {
+    background-color: #375b6d;
+    border-color: #375b6d !important;
+}
+
+/* Clicking anywhere on the line beside the checkbox, in the Esignature popup gets checked in  & checked out. */
+.EsignCheckBoxLabel .ant-form-item-children
+{
+    display: table;
+}
+
+.EsignCheckBoxLabel .EsignCheck, .EsignCheckBoxLabel .EsignLabel 
+{
+    display: table-cell;
+}
+
+.EsignLabel {
+    padding-left: 5px;
+    line-height: 20px;
+}
+/*End */
+.box_curve 
+{
+   
+    border-radius: 10px;
+}
+
+.leftfivepadding {
+    padding: 0px 5px !important;
+}
+
+.treetitle {
+    color: rgba(0, 0, 0, 0.65)
+}
+
+.ant-tree-node-selected .treetitle {
+    color: #ffff
+}
+
+.searched {
+    color: red
+}
